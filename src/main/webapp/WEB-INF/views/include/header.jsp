@@ -75,9 +75,9 @@
 
             <div class="navbar-form navbar-right hidden">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="数据库" id="searchKeyWord"/>
+                    <input type="text" class="form-control" placeholder="Database" id="searchKeyWord"/>
                 </div>
-                <button class="btn btn-default" onclick="searchProduct();">查找商品</button>
+                <button class="btn btn-default" onclick="searchProduct();">Find item</button>
             </div>
         </div>
     </div>
@@ -97,7 +97,7 @@
                 searchResult = result.result;
             },
             error : function(result) {
-                layer.alert('查询错误');
+                layer.alert('query error');
             }
         });
         if(searchResult == "success")
