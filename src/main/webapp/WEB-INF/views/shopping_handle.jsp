@@ -153,7 +153,7 @@
                         '<td>'+allShoppingRecords[i].productPrice+'</td>'+
                         '<td>'+orderArray[allShoppingRecords[i].orderStatus]+'</td>'+
                         '<td>'+
-                        '<button class="btn btn-primary btn-sm" onclick="sendProducts('+allShoppingRecords[i].userId+','+allShoppingRecords[i].productId+',\''+allShoppingRecords[i].time+'\')">发货</button>'+
+                        '<button class="btn btn-primary btn-sm" onclick="sendProducts('+allShoppingRecords[i].userId+','+allShoppingRecords[i].productId+',\''+allShoppingRecords[i].time+'\')">deliver goods</button>'+
                         '</td>'+
                         '</tr>';
                 unHandleCounts++;
