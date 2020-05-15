@@ -24,9 +24,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by 14437 on 2020/5/1.
- */
+
 @Controller
 public class ProductController {
     @Resource
@@ -103,7 +101,7 @@ public class ProductController {
     @RequestMapping(value = "/searchProduct", method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> searchProduct(String searchKeyWord){
-        System.out.println("我到了SearchProduct"+searchKeyWord);
+        System.out.println("SearchProduct"+searchKeyWord);
         List<Product> productList = new ArrayList<Product>();
         productList = productService.getProductsByKeyWord(searchKeyWord);
         String searchResult = JSONArray.toJSONString(productList);
