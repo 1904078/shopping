@@ -172,7 +172,7 @@
                         '<td>'+allShoppingRecords[i].productPrice+'</td>'+
                         '<td>'+orderArray[allShoppingRecords[i].orderStatus]+'</td>'+
                         '<td>'+
-                        '<button class="btn btn-primary btn-sm" onclick="productDetail('+allShoppingRecords[i].productId+')">evaluate</button>'+
+                        '<button class="btn btn-primary btn-sm" onclick="demo('+allShoppingRecords[i].productId+')">evaluate</button>'+
                         '</td>'+
                         '</tr>';
                 receiveCounts++;
@@ -229,6 +229,10 @@
         receiveTable.innerHTML += receiveHTML;
         allTable.innerHTML += allHTML;
         layer.close(loading);
+    }
+
+    function demo() {
+        alert("Unfinished evaluation function！")
     }
 
     function getShoppingRecords() {

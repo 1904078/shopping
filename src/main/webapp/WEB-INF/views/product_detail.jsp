@@ -359,7 +359,7 @@
               error : function(result) {
                   layer.alert('Query error');
               }
-          });f
+          });
           return results;
       }
 
