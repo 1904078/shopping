@@ -104,6 +104,5 @@
             window.location.href = "${cp}/search";
     }
 </script>
-你是猪吗  哈哈哈哈  是的
 </body>
 </html>
